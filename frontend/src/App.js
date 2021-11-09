@@ -1,28 +1,27 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router,  Route } from "react-router-dom";
 import HomeScreen from './screens/HomeScreen';
 import CartScreen from './screens/CartScreen';
 
 //Components
 import Navbar from './components/Navbar';
+import { Switch } from 'react-router';
 
 const App = () => {
   return (
-    <BrowserRouter>
-    <Navbar/>
+    <Router>
+     <Navbar/> 
     <div className="App">
        <main>
-         <Routes>
-          <Route path="/" element={HomeScreen} />
-          <Route path="/cart" element={CartScreen} />
-          <Route path="/cart" element={CartScreen} />
+         <Switch>
+          <Route exact path="/" component={HomeScreen} />
+          <Route exact path="/cart" component={CartScreen} />
           {/* <Route path="/cart" element={CartScreen} />
           <Route path="/cart" element={CartScreen} /> */}
-
-         </Routes>
+         </Switch>
        </main>
     </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
