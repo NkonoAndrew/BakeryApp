@@ -13,10 +13,10 @@
 7 verbose lifecycle Bakery@1.0.0~data:import: unsafe-perm in lifecycle true
 8 verbose lifecycle Bakery@1.0.0~data:import: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Nkono Mwase Andrew\Desktop\Bakery\node_modules\.bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\MinGW\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jdk-16.0.1\bin;C:\Users\Nkono Mwase Andrew\AppData\Local\atom\bin;C:\Users\Nkono Mwase Andrew\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nkono Mwase Andrew\AppData\Roaming\npm
 9 verbose lifecycle Bakery@1.0.0~data:import: CWD: C:\Users\Nkono Mwase Andrew\Desktop\Bakery
-10 silly lifecycle Bakery@1.0.0~data:import: Args: [ '/d /s /c', 'node backend/seederScript' ]
+10 silly lifecycle Bakery@1.0.0~data:import: Args: [ '/d /s /c', 'node backend/seederScript.js' ]
 11 silly lifecycle Bakery@1.0.0~data:import: Returned: code: 1  signal: null
 12 info lifecycle Bakery@1.0.0~data:import: Failed to exec data:import script
-13 verbose stack Error: Bakery@1.0.0 data:import: `node backend/seederScript`
+13 verbose stack Error: Bakery@1.0.0 data:import: `node backend/seederScript.js`
 13 verbose stack Exit status 1
 13 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
 13 verbose stack     at EventEmitter.emit (events.js:400:28)
@@ -32,7 +32,7 @@
 19 verbose npm  v6.14.15
 20 error code ELIFECYCLE
 21 error errno 1
-22 error Bakery@1.0.0 data:import: `node backend/seederScript`
+22 error Bakery@1.0.0 data:import: `node backend/seederScript.js`
 22 error Exit status 1
 23 error Failed at the Bakery@1.0.0 data:import script.
 23 error This is probably not a problem with npm. There is likely additional logging output above.
