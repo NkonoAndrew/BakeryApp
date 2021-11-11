@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    background-color: #171717;
+    background-color: hsl(360, 71%, 66%);
     display: flex;
     justify-content: space-between;
     align-items: center;

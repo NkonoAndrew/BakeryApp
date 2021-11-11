@@ -2,19 +2,20 @@ const express = require('express');
 
 const router = express.Router();
 
-//@desc GET all products 
-//@route GET .api.products
-//@access Public 
-router.get("/", (req, res) => {
-
-} )
+const {
+    getAllProducts,
+    getProductById,
+} = require("../controller/productControllers")
 
 //@desc GET all products 
 //@route GET .api.products
 //@access Public 
-router.get("/", (req, res) => {
+router.get('/', getAllProducts);
 
-} )
+//@desc GET all products 
+//@route GET .api.products
+//@access Public 
+router.get('/:id', getProductById);
 
-module.exports = router
+module.exports = router;
 
