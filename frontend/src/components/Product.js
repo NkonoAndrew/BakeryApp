@@ -1,6 +1,7 @@
 import "./Product.css";
+import { Link } from "react-router-dom";
 
-const Product = ({imageUrl, name, description, price}) => {
+const Product = ({imageUrl, name, description, price, productId}) => {
   return (
     <div className="product">
 
@@ -16,20 +17,9 @@ const Product = ({imageUrl, name, description, price}) => {
             </header>
             <p className="item-text"> {description}</p>
 
-            <div className="quantityandCart">
-              <p className="quantity"> Quantity:
-                  <select className="select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-              </p>
-
-              <p>
-                <button type="button" className="addtoCart">Add to Cart</button>
-              </p>
-            </div>
+      </div>
+      <div>
+      <Link to={`/product/${productId}`} className="info__button">View</Link> 
       </div>
     </div>
   );

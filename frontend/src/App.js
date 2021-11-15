@@ -3,6 +3,7 @@ import { BrowserRouter as Router,  Route } from "react-router-dom";
 import HomeScreen from './screens/HomeScreen';
 import CartScreen from './screens/CartScreen';
 import LoginScreen from './screens/LoginScreen';
+import ProductScreen from './screens/ProductScreen';
 
 //Components
 import Navbar from './components/Navbar';
@@ -18,8 +19,8 @@ const App = () => {
           <Route exact path="/" component={HomeScreen} />
           <Route exact path="/cart" component={CartScreen} />
           <Route exact path="/login" component={LoginScreen} />
-          {/* <Route path="/cart" element={CartScreen} />
-          <Route path="/cart" element={CartScreen} /> */}
+          <Route exact path="/product/:id" component={ProductScreen} />
+          
          </Switch>
        </main>
     </div>
