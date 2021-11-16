@@ -1,23 +1,5 @@
 const products = [
     {
-      name: "Buttermilk Pancakes",
-      imageUrl:
-        "https://www.yourhomebasedmom.com/wp-content/uploads/2018/12/buttermilk-pancakes-from-scratch.jpg",
-      description:
-        "These buttermilk pancakes are so light and fluffy and perfect topped with maple syrup and butter for the ultimate indulgent breakfast or brunch",
-      price: 15.99,
-      countInStock: 15,
-    },
-    {
-      name: "Crepes'",
-      imageUrl:
-        "https://www.baked-theblog.com/wp-content/uploads/2021/04/Sourdough-Crepes-2.jpg",
-      description:
-        "Pancake that's been thinned out using a cast-iron griddle and is either stuffed or folded and topped with savory or sweet fillings",
-      price: 10.99,
-      countInStock: 10,
-    },
-    {
       name: "Bread Pudding",
       imageUrl:
         "https://therecipecritic.com/wp-content/uploads/2021/09/crossaintbreadpudding.jpg",
@@ -171,7 +153,7 @@ const products = [
         countInStock: 10,
     },
     {
-        name: "Iced Coffe",
+        name: "Iced Coffee",
         imageUrl:
         "https://gimmedelicious.com/wp-content/uploads/2018/03/Iced-Matcha-Latte2.jpg",
         description:

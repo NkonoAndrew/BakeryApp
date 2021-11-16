@@ -4,8 +4,6 @@ import { useEffect} from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 
-
-
 //components
 import Product from  '../components/Product'
 
