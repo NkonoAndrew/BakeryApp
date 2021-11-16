@@ -1,6 +1,5 @@
 //How we make http requests to out backend
 
-
 import * as actionTypes from "../constants/cartConstants";
 import axios from "axios";
 
@@ -11,10 +10,11 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
     type: actionTypes.ADD_TO_CART,
     payload: {
       product: data._id,
-      name: data.title,
+      name: data.name,
       imageUrl: data.imageUrl,
       price: data.price,
-      
+      countInStock: data.countInStock,
+      qty,
     },
   });
 
