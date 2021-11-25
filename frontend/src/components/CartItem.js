@@ -11,18 +11,17 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
         <p>{item.name}</p>
       </Link>
       <p className="cartitem__price">${item.price}</p>
-      <select> 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                 </select>
+      <select
+        value={item.qty}
+        onChange={(e) => qtyChangeHandler(item.product, e.target.value)}
+        className="cartItem__select"
+      >
+        {[...Array(item.countInStock).keys()].map((x) => (
+          <option key={x + 1} value={x + 1}>
+            {x + 1}
+          </option>
+        ))}
+      </select>
       <button
         className="cartItem__deleteBtn"
         onClick={() => removeHandler(item.product)}
