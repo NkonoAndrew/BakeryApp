@@ -6,7 +6,7 @@ const products = [
       description:
       "Sugar, milk, and a thickening agent such as cornstarch, gelatin, eggs, rice or tapioca to create a sweet, creamy dessert",
       price: 12.99,
-      countInStock: 5,
+      countInStock: 10,
     },
     {
       name: "Avocado Toast",
@@ -15,7 +15,7 @@ const products = [
       description:
         "Mashed avocado spread over crusty whole-wheat bread, finished with olive oil, red pepper flakes, and flaky sea salt and boiled egg ",
       price: 19.99,
-      countInStock: 25,
+      countInStock: 10,
     },
     {
       name: "French Toast",
@@ -24,7 +24,7 @@ const products = [
       description:
         "Bread is dipped into eggs and seasonings and then fried to a golden brown",
       price: 10.99,
-      countInStock: 4,
+      countInStock: 10,
     },
     {
       name: "Croissant Toast",
