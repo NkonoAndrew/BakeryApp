@@ -9,7 +9,7 @@ import CartItem from "../components/CartItem";
 // Actions
 import { addToCart, removeFromCart } from "../redux/actions/cartActions";
 
-const CartScreen = () => {
+const CartScreen = ({history}) => {
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cart);
@@ -34,6 +34,12 @@ const CartScreen = () => {
       .reduce((price, item) => price + item.price * item.qty, 0)
       .toFixed(2);
   };
+
+  const checkoutHandler = () => {
+    history.push('/shipping');
+  };
+
+  
 
   return (
     <>
@@ -63,7 +69,10 @@ const CartScreen = () => {
             <p>${getCartSubTotal()}</p>
           </div>
           <div>
-            <button>Proceed To Checkout</button>
+            <button
+                type="button"
+                onClick={checkoutHandler}
+            >Proceed To Checkout</button>
           </div>
         </div>
       </div>
