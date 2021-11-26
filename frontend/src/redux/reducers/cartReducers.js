@@ -40,6 +40,12 @@ export const cartReducer = (state = CART_INITIAL_STATE, action) => {
         ...state,
         cartItems: state.cartItems.filter((x) => x.product !== action.payload),
       };
+
+      case actionTypes.CART_SAVE_SHIPPING_ADDRESS:
+        return {
+          ...state,
+          shippingAddress: action.payload
+        }
     default:
       return state;
   }

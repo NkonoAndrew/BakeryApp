@@ -4,6 +4,9 @@ import HomeScreen from './screens/HomeScreen';
 import CartScreen from './screens/CartScreen';
 import LoginScreen from './screens/LoginScreen';
 import ProductScreen from './screens/ProductScreen';
+import ShippingScreen from './screens/ShippingScreen';
+import PaymentScreen from './screens/PaymentScreen';
+
 
 //Components
 import Navbar from './components/Navbar';
@@ -20,6 +23,8 @@ const App = () => {
           <Route exact path="/cart" component={CartScreen} />
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/product/:id" component={ProductScreen} />
+          <Route exact path="/shipping" component={ShippingScreen} />
+          <Route exact path="/payment" component={PaymentScreen} />
           
          </Switch>
        </main>
