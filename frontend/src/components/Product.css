@@ -1,12 +1,15 @@
 .product {
   width: 600px;
-  padding: 1rem;
+  padding: 0.6rem;
   cursor: pointer;
   margin: 8px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-direction: row;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 10px;
 }
   .productImage > img {
     object-fit: cover;

@@ -9,7 +9,7 @@ const Product = ({imageUrl, name, description, price, productId}) => {
         <img src={imageUrl}
         alt="" />
       </div>
-    
+      
       <div className="product__info">
           <header>
               <h4>{name}</h4>
