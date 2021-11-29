@@ -2,6 +2,8 @@ import React from 'react';
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import LogoutButton from './LogoutButton';
+import LoginButton from './LoginButton';
 
 
 const Navbar = () => {
@@ -33,7 +35,10 @@ const Navbar = () => {
           <Link to="/">Shop</Link>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          <LoginButton />
+        </li>
+        <li>
+          <LogoutButton />
         </li>
       </ul>
             

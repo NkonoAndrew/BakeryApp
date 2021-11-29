@@ -4,6 +4,8 @@ import { useEffect} from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 
+import { useAuth0 } from '@auth0/auth0-react';
+
 //components
 import Product from  '../components/Product'
 
@@ -17,12 +19,14 @@ const HomeScreen = () => {
   const getProducts = useSelector((state) => state.getProducts);
   const { products, loading, error } = getProducts;
 
+  const { isAuthenticated } = useAuth0();
+
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);
 
-
-    return <div className="homeScreen">
+  if(isAuthenticated) {
+    return (<div className="homeScreen">
       <h2 className="homescreen__title">Menu Options</h2>
       <div className = "underline" ></div>
 
@@ -45,6 +49,10 @@ const HomeScreen = () => {
         )}        
       </div>
     </div>
+    )
+  }else{
+    return <div> Login to Browse Menu </div>
+  }
     
 }
 

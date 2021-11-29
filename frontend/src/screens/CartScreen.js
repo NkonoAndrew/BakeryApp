@@ -2,6 +2,7 @@ import "./CartScreen.css";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { useAuth0 } from '@auth0/auth0-react';
 
 // Components
 import CartItem from "../components/CartItem";
@@ -14,6 +15,8 @@ const CartScreen = ({history}) => {
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+
+  const { isAuthenticated } = useAuth0();
 
   useEffect(() => {}, []);
 
@@ -41,43 +44,46 @@ const CartScreen = ({history}) => {
 
   
 
-  return (
-    <>
-      <div className="cartscreen">
-        <div className="cartscreen__left">
-          <h2>Shopping Cart</h2>
+  if(isAuthenticated) {
+    return (
+      <>
+        <div className="cartscreen">
+          <div className="cartscreen__left">
+            <h2>Shopping Cart</h2>
 
-          {cartItems.length === 0 ? (
-            <div>
-              Your Cart Is Empty <Link to="/">Go Back</Link>
+            {cartItems.length === 0 ? (
+              <div>
+                Your Cart Is Empty <Link to="/">Go Back</Link>
+              </div>
+            ) : (
+              cartItems.map((item) => (
+                <CartItem
+                  key={item.product}
+                  item={item}
+                  qtyChangeHandler={qtyChangeHandler}
+                  removeHandler={removeFromCartHandler}
+                />
+              ))
+            )}
+          </div>
+
+          <div className="cartscreen__right">
+            <div className="cartscreen__info">
+              <p>Subtotal ({getCartCount()}) items</p>
+              <p>${getCartSubTotal()}</p>
             </div>
-          ) : (
-            cartItems.map((item) => (
-              <CartItem
-                key={item.product}
-                item={item}
-                qtyChangeHandler={qtyChangeHandler}
-                removeHandler={removeFromCartHandler}
-              />
-            ))
-          )}
-        </div>
-
-        <div className="cartscreen__right">
-          <div className="cartscreen__info">
-            <p>Subtotal ({getCartCount()}) items</p>
-            <p>${getCartSubTotal()}</p>
-          </div>
-          <div>
-            <button
-                type="button"
-                onClick={checkoutHandler}
-            >Proceed To Checkout</button>
+            <div>
+              <button
+                  type="button"
+                  onClick={checkoutHandler}
+              >Proceed To Checkout</button>
+            </div>
           </div>
         </div>
-      </div>
-    </>
-  );
+      </>)
+  }else{
+    return <div> Login to Browse Cart </div>
+  }
 };
 
 export default CartScreen;
