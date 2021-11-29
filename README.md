@@ -2,6 +2,7 @@
 
 # add dependencies
  - npm install 
+ - npm run dev
  
  
 # alternative way
