@@ -42,9 +42,31 @@ Payment Screen
   - MongoDB
 - Scripts
   - ![scripts](https://user-images.githubusercontent.com/46858191/144118274-aa1eb614-827f-4c80-8288-a074d7545402.png)
+- Products Schema
+  - ![Products Schema](https://user-images.githubusercontent.com/46858191/144119718-f7b30ec1-3fe8-4f42-8fc3-8a8dbf44c8a9.png)
 
-- Database Schema (products)
-  -
+## Folder Structure 📂 
+- Frontend 📂 
+  - src
+    - components
+    - redux
+    - screens
+- Backend 📂 
+  - config (database configuration)
+  - controller (apis)
+  - data (product's data imported to database)
+  -  models (product schema)
+  -  routes
+  -  seederScripts.js
+  -  server.js
+
+## How to run locally
+In the root folder:
+1. "npm install"
+2. "npm run dev"
+
+# System Design
+
 
 
  
