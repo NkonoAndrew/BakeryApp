@@ -65,6 +65,9 @@ In the root folder:
 1. "npm install"
 2. "npm run dev"
 
+In the frontend folder📂
+"npm install @auth0/auth0-react"
+
 ## System Design
 Interaction Diagram
 ![Intercation Diagram](https://user-images.githubusercontent.com/46858191/144121725-bcf221d3-4c23-4a10-835d-87fcb906d5dd.png)
