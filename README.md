@@ -1,5 +1,5 @@
 # CMPE 172 - Bakery App 
-University Name: San Jose State 
+University Name: San Jose State University
 
 Course: Enterprise Software
 
