@@ -65,8 +65,18 @@ In the root folder:
 1. "npm install"
 2. "npm run dev"
 
-# System Design
+## System Design
+Interaction Diagram
+![Intercation Diagram](https://user-images.githubusercontent.com/46858191/144121725-bcf221d3-4c23-4a10-835d-87fcb906d5dd.png)
 
+DB Schema
+![DB Schema](https://user-images.githubusercontent.com/46858191/144121737-36c59c6a-95e1-4906-8137-5550e31e9494.png)
+
+Project Structure
+![Project Structure](https://user-images.githubusercontent.com/46858191/144121740-20c88fa9-6e8e-4e7e-b71e-daf443902d4b.png)
+
+Class Diagram
+![Class Diagram](https://user-images.githubusercontent.com/46858191/144121757-31a43ee2-28fa-4371-875c-54805b1980e0.png)
 
 
  
