@@ -61,12 +61,10 @@ Payment Screen
   -  server.js
 
 ## How to run locally
-In the root folder:
 1. "npm install"
-2. "npm run dev"
+2. In the frontend folder📂: "npm install @auth0/auth0-react"
+3. "npm run dev" to run the frontend and backend 
 
-In the frontend folder📂
-"npm install @auth0/auth0-react"
 
 ## System Design
 Interaction Diagram
