@@ -67,7 +67,7 @@ Payment Screen
 1. "npm install"
 2. In the frontend folder📂: "npm install @auth0/auth0-react"
 3. Go back to root directory, then run "npm run dev" to run the frontend and backend concurrently
-4. Site should be show up at http://localhost:3000/
+4. Site should show up at http://localhost:3000/
 
 
 ## System Design
