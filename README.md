@@ -63,7 +63,7 @@ Payment Screen
 ## How to run locally
 1. "npm install"
 2. In the frontend folder📂: "npm install @auth0/auth0-react"
-3. "npm run dev" to run the frontend and backend 
+3. Go back to root directory, then run "npm run dev" to run the frontend and backend concurrently
 
 
 ## System Design
